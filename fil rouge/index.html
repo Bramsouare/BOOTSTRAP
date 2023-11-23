@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Accueil</title>
+</head>
+
+<body>
+
+    <div class="container-fluid ">
+
+        <header class="col-12 d-flex justify-content-between"> <!--logo + barre de navigation sur une même ligne-->
+
+            <div class="col-4 col-md-2 mt-2 "> <!--logo-->
+                <img src="asset/images_the_district/the_district_brand/linkedin_banner_image_1.png"
+                    class="img-fluid mb-1 logo" alt="the district logo">
+            </div>
+
+            <nav class="navbar navbar-expand-sm navbar-light col-md-9 ml-auto "> <!--  barre de vavigation -->
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="collapsibleNavbar">
+
+                    <ul class="navbar-nav "> <!-- items des la barre de navigation -->
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="categorie.html">Categorie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="platscat.html">Plats</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+
+        <div class="d-none d-lg-block position-relative"> <!--barre de recherche sur la video au centre-->
+
+            <video autoplay loop muted playsinline poster="asset/images_the_district/burgervideo.mp4" class="video">
+                <source src="asset/images_the_district/burgervideo.mp4" type="video/mp4"> <!--video-->
+            </video>
+            <div class="search-bar position-absolute">
+                <nav class="navbar navbar-light bg-transparent "> <!--barre de recherche-->
+                    <form class="form-inline justify-content-between input-group">
+                        <input class="form-control " type="search" placeholder="rechercher...">
+                        <button class="btn btn-outline-warning ml-auto" type="submit">go!</button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+        <div class="image-container d-md-none">
+            <img src="asset/images_the_district/borderau.png" alt="image de remplacement" class="img-fluid"> <!--image-->
+        </div>
+
+        <div class="d-none d-lg-block mx-auto">
+
+            <div class="d-flex justify-content-around my-3"> <!--les 3 carte sont sur une même ligne-->
+
+                <div class="card zoom" style="width: 18rem;">
+                    <img src="asset/images_the_district/categorie/asian_food_cat.jpg" class="card-img-top"
+                        alt="asian_food_cat">
+                    <div class="card-body">
+                        <p class="card-text">Les plats asiatiques</p>
+                    </div>
+                </div>
+                <div class="card zoom" style="width: 18rem;">
+                    <img src="asset/images_the_district/categorie/burger_cat.jpg" class="card-img-top" alt="burger_cat">
+                    <div class="card-body">
+                        <p class="card-text">Tout les burgers</p>
+                    </div>
+                </div>
+                <div class="card zoom" style="width: 18rem;">
+                    <img src="asset/images_the_district/categorie/pasta_cat.jpg" class="card-img-top" alt="pasta_cat">
+                    <div class="card-body">
+                        <p class="card-text">Toutes les pâtes du chef</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-around mb-3"> <!--les 3 carte sont sur une même ligne-->
+
+                <div class="card zoom" style="width: 18rem;">
+                    <img src="asset/images_the_district/categorie/pizza_cat.jpg" class="card-img-top" alt="pizza_cat">
+                    <div class="card-body">
+                        <p class="card-text">Les pizzas italiennes</p>
+                    </div>
+                </div>
+                <div class="card zoom" style="width: 18rem;">
+                    <img src="asset/images_the_district/categorie/salade_cat.jpg" class="card-img-top" alt="salade_cat">
+                    <div class="card-body">
+                        <p class="card-text">Les salades</p>
+                    </div>
+                </div>
+                <div class="card zoom" style="width: 18rem;">
+                    <img src="asset/images_the_district/categorie/veggie_cat.jpg" class="card-img-top" alt="veggie_cat">
+                    <div class="card-body">
+                        <p class="card-text">Les spécialités véganes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-around"> <!--les 3 carte sont sur une même ligne-->
+
+                <div class="card zoom" style="width: 18rem;">
+                    <img src="asset/images_the_district/categorie/sandwich_cat.jpg" class="card-img-top"
+                        alt="sandwich_cat">
+                    <div class="card-body">
+                        <p class="card-text">goûter nos sandwichs</p>
+                    </div>
+                </div>
+                <div class="card zoom" style="width: 18rem;">
+                    <img src="asset/images_the_district/categorie/wrap_cat.jpg" class="card-img-top" alt="wrap_cat">
+                    <div class="card-body">
+                        <p class="card-text">laissez-vous tenter par nos délicieux wraps</p>
+                    </div>
+                </div>
+                <div class="card zoom" style="width: 18rem;">
+                    <img src="asset/images_the_district/food/lasagnes_viande.jpg" class="card-img-top"
+                        alt="lasagnes_viande">
+                    <div class="card-body">
+                        <p class="card-text">lasagne digne de ce nom</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="card d-md-none my-2 w-100"> <!--carte-->
+            <img src="asset/images_the_district/categorie/sandwich_cat.jpg" class="card-img-top" alt="sandwich_cat">
+            <div class="card-body">
+                <p class="card-text">Goûter nos sandwichs</p>
+            </div>
+        </div>
+
+
+        <div class="card d-md-none my-2 w-100"> <!--carte-->
+            <img src="asset/images_the_district/categorie/wrap_cat.jpg" class="card-img-top" alt="wrap_cat">
+            <div class="card-body">
+                <p class="card-text">Laissez-vous tenter par nos délicieux wraps</p>
+            </div>
+        </div>
+
+
+        <div class="card d-md-none my-2 w-100"> <!--carte-->
+            <img src="asset/images_the_district/food/lasagnes_viande.jpg" class="card-img-top" alt="lasagnes_viande">
+            <div class="card-body">
+                <p class="card-text">Lasagne digne de ce nom</p>
+            </div>
+        </div>
+
+        <footer class="col-12"> <!--bas de page-->
+
+            <div class="d-flex justify-content-center"> <!--les 3 logo sont sur une même ligne-->
+                <img class="col-1" src="asset/images_the_district/instagram.png" alt="logo instagram">
+                <img class="col-1" src="asset/images_the_district/facebook.png" alt="logo facebook">
+                <img class="col-1" src="asset/images_the_district/youtube.png" alt="logo youtube">
+
+            </div>
+
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="asset/js/javascript.js"></script>
+
+</body>
+
+</html>

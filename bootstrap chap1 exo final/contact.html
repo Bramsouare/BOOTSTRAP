@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>contact</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <header class="d-none d-lg-block">
+
+            <div class="row col-12 "> <!--image + texte aligner sur une même ligne-->
+
+                <img src="asset/img/jarditou_logo.jpg" class="img-fluid pl-0 col-2 " alt="jarditou_logo">
+                <div class="col-10 display-4 ">
+                    <p class="text-lg-right mr-4">Tout le jardin</p>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <nav class="navbar navbar-expand-sm navbar-light bg-light"> <!--barre de navigation-->
+
+            <a class="nav-link show" href="https://jarditou.lefebvreharold.fr">jarditou.com</a> <!--lien en texte clic -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                <ul class="navbar-nav"> <!--items de navigation-->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tableau.html">tableau</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">contacte</a>
+                    </li>
+                </ul>
+                <form class="form-inline ml-auto"> <!--barre de recherche-->
+                    <input class="form-control mr-sm-2" type="search" placeholder="votre promotion" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">rechercher</button>
+                </form>
+            </div>
+        </nav>
+
+        <img src="asset/img/promotion.jpg" class="img-fluid px-0 col-12" alt="image responsive"> <!--bordereau qui prend toute la largeur-->
+
+        <p class="col-12 px-0">*Ces zones sont obligatoires</p> <!--texte-->
+
+        <form class="col-12 px-0"> <!--formulaire-->
+            <div class="form-group"></div>
+          
+            <fieldset>
+
+                <legend>Vos coordonées</legend> 
+
+                <label for="nom">nom*</label><input type="text" class="form-control" name="nom" id="nom"
+                    placeholder="Veuillez saisir votre nom"><br> <!--saisie du nom-->
+                <label for="prenom">prenom*</label><input type="text" class="form-control" name="prenom" id="prenom"
+                    placeholder="Veuillez saisir votre prenom"><br> <!--saisie du prenom-->
+                <label for="sexe">sexe* </label><br> <!--choix du sexe-->
+                <input type="radio" name="sexe" id="sexe" value="sexe">Féminin
+                <input type="radio" name="sexe" value="sexe">Masculin<br>
+                <label for="date">date de naissance*:</label><input type="date" class="form-control" name="date"
+                    id="date" placeholder="jj/mm/aaaa"><br> <!--saisie de la date de naissance-->
+                <label for="code">code postal*</label><input type="text" class="form-control" name="code" id="code"><br> <!--saisie du code postal-->
+                <label for="adresse">adresse</label><input type="text" class="form-control" name="adresse"id="adresse"><br> <!--saisie d'adresse-->                   
+                <label for="ville">ville</label><input type="text" class="form-control" name="ville" id="ville"><br> <!--saisie de la ville-->
+                <label for="email">email*</label><input type="email" class="form-control" name="email" id="email"
+                    placeholder="souarei404@gmail.com"> <!--saisie du mail-->
+
+            </fieldset>
+            <fieldset>
+
+                <legend>Votre demande</legend> <!--tittre de la deuxième partie du formulaire-->
+
+                <div class="form-group">
+                    <label for="sujet">sujet</label> <!--choix du sujet par options-->
+                    <select class="form-control" id="veuillez selectionner un sujet"> <!--les options-->
+                        <option value="Veuillez séléctionner un sujet">Veuillez séléctionner un sujet</option> 
+                        <option value="Mes commandes">Mes commandes</option>
+                        <option value="Question sur un produit">Question sur un produit</option>
+                        <option value="Réclamation">Réclamation</option>
+                        <option value="Autres">Autres</option>
+                    </select><br>
+                    </select>
+                </div>
+
+                <label for="votre">votre question*</label><textarea name="votre" class="form-control"
+                    id="votre"></textarea><br> <!--saisie d'une question-->
+
+            </fieldset>
+            <input type="checkbox" name="* J'accepte le traitement informatique de ce formulaire">J'accepte le
+            traitement informatique de ce formulaire.<br> <!--case à cochez-->
+            <button type="submit" class="btn btn-dark mt-2">envoyer</button> <!--bouton envoyer ou annuler-->
+            <button type="reset" class="btn btn-dark mt-2">Annuler</button>
+
+        </form><br>
+        <footer class="col-12 px-0 mb-2"> <!--bas de page-->
+
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark"> <!--barre de navigation-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span> 
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav"> <!--items de navigation-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mentions légales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">horaires</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">plan du site</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            ntegrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbhaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script src="asset/js/javascript.js"></script>
+    </div>
+
+</body>
+
+</html>

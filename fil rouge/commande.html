@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="alternate" href="atom.xml" type="application/atom+xml" title="Atom">
+    <link rel="stylesheet" href="style.css">
+    <title>accueil</title>
+    <style>
+        body {
+            background-image: url("asset/images_the_district/fondecran.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style> <!--fond d'écrant style-->
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <header class="col-12 d-flex justify-content-between"> <!--logo + barre de navigation sur une même ligne-->
+
+            <div class="col-4 col-md-2 mt-2  ">
+                <img src="asset/images_the_district/the_district_brand/linkedin_banner_image_1.png"
+                    class="img-fluid mb-1 logo" alt="the district logo"> <!--logo-->
+            </div>
+
+            <nav class="navbar navbar-expand-sm navbar-light col-md-9"> <!--barre de navigation-->
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                    <ul class="navbar-nav "> <!-- items des la barre de navigation -->
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="categorie.html">Categorie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="platscat.html">Plats</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+        <div>
+            <img src="asset/images_the_district/borderau.png" class="img-fluid col-12 px-0 m-0" alt="image de tete"> <!--bordereau qui prend toute la largeur-->
+
+        </div>
+        <div class="card bg-lighter d-none d-lg-block w-50 mx-auto mt-2" style="max-width: 540px;"> <!--carte avec image et texte + bouton-->
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="asset/images_the_district/food/cheesburger.jpg" class="card-img" alt="platCommander">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body ">
+                        <h5 class="card-title">Plats commandés</h5>
+                        <p class="card-text">Quantité: <span id="quantity">0</span></p>
+                        <button id="increaseQuantity" class="btn btn-primary">Augmenter la quantité</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-none d-lg-block mx-auto">
+
+            <form> <!--formulaire-->
+
+                <div class="form-group mt-5"> <!--saisie du nom et prénom avec alert sur une seul ligne-->
+                    <label for="nomPrenom">Nom et prénom</label>
+                    <input type="text" class="form-control" id="nomPrenom">
+                    <span id="!n_manquant"></span>
+                </div>
+                <div class="row mt-5"> <!--saisie du mail et telephone avec alert les deux élément aligner sur une ligne-->
+                    <div class="form-group col-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email">
+                        <span id="!email_manquant"></span>
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="telephone">Téléphone</label>
+                        <input type="text" class="form-control" id="telephone">
+                        <span id="!telephone_manquant"></span>
+                    </div>
+                </div>
+                <div class="form-group mt-5 mb-3"> <!--saisie de l'adresse avec alert sur une ligne-->
+                    <label for="adresse">Votre adresse :</label>
+                    <textarea class="form-control" id="adresse" name="adresse"></textarea>
+                    <span id="!adresse_manquant"></span>
+                </div>
+                <div class="form-group mt-5 mb-3"> <!--bouton envoyer-->
+
+                    <a href="contact.html" class="btn btn-primary">Envoyer</a>
+
+                </div>
+
+            </form>
+        </div>
+        <div class="d-md-none">
+
+            <div class="w-50 mx-auto mt-2" style="max-width: 540px;"> <!--carte-->
+
+                <div class="row no-gutters">
+
+                    <div class="col-md-4">
+                        <img src="asset/images_the_district/food/lasagnes_viande.jpg" class="card-img"
+                            alt="platCommander">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Plats commandés</h5>
+                            <p class="card-text">Quantité: <span id="quantityy">0</span></p>
+                            <button id="increaseQuantityy" class="btn btn-primary">Augmenter la quantité</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form> <!--formulaire en colonne sur telephone-->
+
+                <div class="form-group mt-5"> <!--saisie nom et prenom-->
+                    <label for="nomPrenoms">Nom et prénom</label>
+                    <input type="text" class="form-control" id="nomPrenoms">
+                    <span id="!n_manquants"></span>
+                </div>
+
+                <div class="form-group mt-5"> <!--saisie du mail-->
+                    <label for="emails">Email</label>
+                    <input type="email" class="form-control" id="emails">
+                    <span id="!email_manquants"></span>
+                </div>
+                <div class="form-group mt-5"> <!--saisie telephone-->
+                    <label for="telephones">Téléphone</label>
+                    <input type="text" class="form-control" id="telephones">
+                    <span id="!telephone_manquants"></span>
+                </div>
+
+                <div class="form-group mt-5 mb-3"> <!--saisie d'adresse-->
+                    <label for="adresses">Votre adresse :</label>
+                    <textarea class="form-control" id="adresses" name="adresses"></textarea>
+                    <span id="!adresse_manquants"></span>
+                </div>
+                <div class="form-group mt-5 mb-3"> <!--bouton envoyer-->
+
+                    <a href="contact.html" class="btn btn-primary">Envoyer</a>
+
+                </div>
+
+
+            </form>
+        </div>
+
+        <footer class="col-12"> <!--bas de page-->
+            <div class="d-flex justify-content-center">  <!--les 3 logo sont sur une même ligne-->
+                <img class="col-1" src="asset/images_the_district/instagram.png" alt="logo instagram">
+                <img class="col-1" src="asset/images_the_district/facebook.png" alt="logo facebook">
+                <img class="col-1" src="asset/images_the_district/youtube.png" alt="logo youtube">
+
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="asset/js/javascript.js"></script>
+
+</body>
+
+</html>
